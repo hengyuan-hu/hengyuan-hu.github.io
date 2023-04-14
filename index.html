@@ -1,0 +1,636 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hengyuan Hu</title>
+
+    <meta name="author" content="Hengyuan Hu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+
+<!-- beginning of papers -->
+
+<template id="cicero">
+<tr>
+    <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+        <div>
+            <img src='images/cicero.png' width="160"></div>
+        </div>
+    </td>
+
+    <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+        <a href="https://www.science.org/doi/full/10.1126/science.ade9097">
+            <papertitle>Human-Level Play in the Game of Diplomacy by Combining Language Models with Strategic Reasoning</papertitle>
+        </a>
+        <br>
+            Meta Fundamental AI Research Diplomacy Team (FAIR),
+        <br>
+        <em>Science</em>, Issue 378, Dec 2022
+        <p></p>
+        <p>
+            We create Cicero, the first AI that achieves human-level performance in Diplomacy, a board game
+            that requires complex strategic planning and natural langauge communication. We address this challenge
+            using combinations of imitation learning, reinforcement learning, search, and large langauge models.
+        </p>
+    </td>
+</tr>
+</template>
+
+<template id="adversity">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/adversity.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://openreview.net/pdf?id=uLE3WF3-H_5">
+                <papertitle>Adversarial Diverstiy in Hanabi</papertitle>
+            </a>
+            <br>
+            Brandon Cui*, Andrei Lupu*, Samuel Sokota, <span class="authorme">Hengyuan Hu</span>, David Wu, Jakob Foerster
+            <br>
+            <em>ICLR</em>, 2023, <b>notable-top-25%</b>
+            <p></p>
+            <p>
+                We produce meaningfully diverse and reasonable joint policies using adversarial reward shaping.
+                We show that naively applying adversarial rewards will lead to agents learning <em>deliberate sabotaging</em> behaviors and
+                we address it using variants of off-belief learning.
+            </p>
+        </td>
+    </tr>
+</template>
+
+
+<template id="improvised">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div class="one">
+                <img src='images/improvised.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/faa6276ea12d7afeb3e42b210c86f688-Paper-Conference.pdf">
+                <papertitle>Self-Explaining Deviations for Coordination</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyaun Hu*</span>, Samuel Sokota*, David Wu, Anton Bakhtin, Andrei Lupu, Brandon Cui, Jakob Foerster
+            <br>
+            <em>NeurIPS</em>, 2022
+            <p></p>
+            <p>
+                We study self-explaining deviations (SEDs), a specific class of coordination problems
+                where players deviate from the common understanding of what reasonable behavior would
+                be in normal circumstances assuming that other agents will realize, using theory of mind,
+                that the circumstance must be abnormal.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="belief-fine-tune">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/belief-ft.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://openreview.net/pdf?id=ckZY7DGa7FQ">
+                <papertitle>A Fine-tuning Approach to Belief State Modeling</papertitle>
+            </a>
+            <br>
+            Samuel Sokota, <span class="authorme">Hengyuan Hu</span>, David Wu, Zico Kolter, Jakob Foerster, Noam Brown
+            <br>
+            <em>ICLR</em>, 2022
+            <p></p>
+            <p>
+                In multi-agent partially observable settings, when policies deviate, as they often do when performing search at test time,
+                the belief function becomes inaccurate. We address the changing belief problem in search by fine-tuning the belief
+                model on-the-fly at test time, achieving better performance and eliminating the need to exact belief tracking.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="obl">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/obl.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="http://proceedings.mlr.press/v139/hu21c/hu21c.pdf">
+                <papertitle>Off-Belief Learning</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu</span>, Adam Lerer, Brandon Cui, Luis Pineda, David Wu, Noam Brown, Jakob Foerster
+            <br>
+            <em>ICML</em>, 2021
+            <p></p>
+            <p>
+                Off-belief learning provably converges to a sequence of fixed joint policies in Dec-POMDP regardless of
+                random seeds, hyper-parameters or even underlying RL algorithms, which effectively solves the ZSC
+                problem discovered in Other-Play. OBL also achieves the best human-AI performance in Hanabi among methods
+                that do not use human data thanks to its grounded, hierachical reasoning ability that resembles humans.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="pikl">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/pikl.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://proceedings.mlr.press/v162/jacob22a/jacob22a.pdf">
+                <papertitle>Modeling strong and human-like gameplay with KL-regularized search</papertitle>
+            </a>
+            <br>
+            Athul Paul Jacob, David J Wu, Gabriele Farina, Adam Lerer, <span class="authorme">Hengyuan Hu</span>, Anton Bakhtin, Jacob Andreas,
+            Noam Brown
+            <br>
+            <em>ICML</em>, 2022
+            <p></p>
+            <p>
+                We propose piKL, which regularize search towards human behavioral clone (BC) policy
+                to obtain better models of human. PiKL not only achieves higher scores but also predicts
+                human moves better than the BC policy trained for the exact purpose.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="pikl-hanabi">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <!-- <img src='' width="160"> -->
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://arxiv.org/pdf/2210.05125.pdf">
+                <papertitle>Human-AI Coordination via Human-Regularized Search and Learning</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu</span>, David J Wu, Adam Lerer, Jakob Foerster, Noam Brown
+            <br>
+            <em>arxiv</em>, 2022
+            <p></p>
+            <p>
+                We apply piKL (regularizing search towards a human model) to both search and RL
+                in the coordination game of Hanabi and show that it achieves better performance
+                with a diverse group of human players in large-scale human experiments.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="rl-search">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <!-- <img src='' width="160"> -->
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://arxiv.org/pdf/2109.15316.pdf">
+                <papertitle>Scalable Online Planning via Reinforcement Learning Fine-Tuning</papertitle>
+            </a>
+            <br>
+            Arnaud Fickinger*, <span class="authorme">Hengyuan Hu*</span>, Brandon Amos, Stuart Russell, Noam Brown
+            <br>
+            <em>NeurIPS</em>, 2022
+            <p></p>
+            <p>
+                Search algorithms (such as MCTS, or Monte-Carlo Search) are often designed by humans.
+                Here, we use RL as a test-time policy improvement operator in place of traditional search.
+                RL search can be applied to environments where tabular search is too expensive to run,
+                and it outperforms tabular search in Atari games.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="k-level">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/k-level.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://proceedings.neurips.cc/paper/2021/file/4547dff5fd7604f18c8ee32cf3da41d7-Paper.pdf">
+                <papertitle>K-level Reasoning for Zero-Shot Coordination in Hanabi</papertitle>
+            </a>
+            <br>
+            Brandon Cui, <span class="authorme">Hengyuan Hu</span>, Luis Pineda, Jakob Foerster
+            <br>
+            <em>NeurIPS</em>, 2021
+            <p></p>
+            <p>
+                We modernize the idea of K-level reasoning in the context of deep learning to train a
+                sequence of agents with increasing yet predictable capabilities to reason. We emperically
+                show that the agents produced this way achieves good human-AI coordination performance.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="other-play">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/other-play.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="http://proceedings.mlr.press/v119/hu20a/hu20a.pdf">
+                <papertitle>“Other-Play” for Zero-Shot Coordination</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu</span>, Adam Lerer, Alex Peysakhovich, Jakob Foerster
+            <br>
+            <em>ICML</em>, 2020
+            <p></p>
+            <p>
+                We discover that in Dec-POMDP, policies trained with the exact same algorithms
+                but with different small details such as seeds can be completely incompatible.
+                We formalize this problem and propose Zero-Shot Coordination as a sanity check
+                for MARL algorithms. Then we create a method to address it by preventing
+                arbitrary symmetry breaking.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="trajedi">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/trajedi.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="http://proceedings.mlr.press/v139/lupu21a/lupu21a.pdf">
+                <papertitle>Trajectory diversity for zero-shot coordination</papertitle>
+            </a>
+            <br>
+            Andrei Lupu, Brandon Cui, <span class="authorme">Hengyuan Hu</span>, Jakob Foerster
+            <br>
+            <em>ICML</em>, 2021
+            <p></p>
+            <p>
+                We propose Trajectory Diversity (TrajeDi), a differentiable objective for
+                generating diverse reinforcement learning policies. We apply this method
+                to multi-agent environments to produce diverse agents and then train a common
+                best response policy that generalize better to unseen partners.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="lbs">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/lbs.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://arxiv.org/pdf/2106.09086.pdf">
+                <papertitle>Learned belief search: Efficiently improving policies in partially observable settings</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu*</span>, Adam Lerer*, Noam Brown, Jakob Foerster
+            <br>
+            <em>arxiv</em>, 2021
+            <p></p>
+            <p>
+                We significantly speed up the SPARTA search algorithm using learned belief
+                model and bootstrapping from Q-functions. Thanks to the neural network belief
+                model, the new search algorithm generalize to unseen partners, making it applicable
+                in human-AI coordination settings.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="ridge-rider">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/rr.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://proceedings.neurips.cc/paper/2020/file/08425b881bcde94a383cd258cea331be-Paper.pdf">
+                <papertitle>Ridge rider: Finding diverse solutions by following eigenvectors of the hessian</papertitle>
+            </a>
+            <br>
+            Jack Parker-Holder, Luke Metz, Cinjon Resnick, <span>Hengyuan Hu</span>, Adam Lerer, Alistair Letcher, Alexander Peysakhovich, Aldo Pacchiano, Jakob Foerster
+            <br>
+            <em>NeurIPS</em>, 2020
+            <p></p>
+            <p>
+                Rather than following the gradient, which corresponds to a locally greedy direction,
+                we instead follow the eigenvectors of the Hessian. By iteratively following and branching
+                amongst the ridges, we effectively span the loss surface to find qualitatively different solutions.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="sparta">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/sparta.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://ojs.aaai.org/index.php/AAAI/article/download/6208/6064">
+                <papertitle>Improving policies via search in cooperative partially observable games</papertitle>
+            </a>
+            <br>
+            Adam Lerer, <span class="authorme">Hengyuan Hu</span>, Jakob Foerster, Noam Brown
+            <br>
+            <em>AAAI</em>, 2020
+            <p></p>
+            <p>
+                In this paper we propose two different search techniques that can be applied to
+                improve an arbitrary agreed-upon policy in a cooperative partially observable game.
+                We prove that these search procedures are theoretically guaranteed to at least
+                maintain the original performance of the agreed-upon policy and achieve new SOTA
+                in the Hanabi benchmark.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="sad">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/sad.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://arxiv.org/pdf/1912.02288.pdf">
+                <papertitle>Simplified action decoder for deep multi-agent reinforcement learning</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu</span>, Jakob N Foerster
+            <br>
+            <em>ICLR</em>, 2020, <b>spotlight</b>
+            <p></p>
+            <p>
+                We present a Simplified Action Decoder (SAD), which resolves contradiction between
+                explorative and informative actions in multi-agent RL. During training SAD allows
+                other agents to not only observe the (exploratory) action chosen, but agents
+                instead also observe the greedy action of their team mates. SAD establishes a new SOTA
+                for 2-5 players on the self-play part of the Hanabi challenge.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<template id="minirts">
+    <tr>
+        <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+            <div>
+                <img src='images/minirts.png' width="160">
+            </div>
+        </td>
+
+        <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+            <a href="https://proceedings.neurips.cc/paper/2019/file/7967cc8e3ab559e68cc944c44b1cf3e8-Paper.pdf">
+                <papertitle>Hierarchical decision making by generating and following natural language instructions</papertitle>
+            </a>
+            <br>
+            <span class="authorme">Hengyuan Hu</span>, Denis Yarats, Qucheng Gong, Yuandong Tian, Mike Lewis
+            <br>
+            <em>NeurIPS</em>, 2019
+            <p></p>
+            <p>
+                We explore using latent natural language instructions as an expressive and compositional
+                representation of complex actions for hierarchical decision making. Rather than directly
+                selecting micro-actions, our agent first generates a latent plan in natural language,
+                which is then executed by a separate model. We create a new miniRTS environments and
+                collect human langauge and trajectory data for this task.
+            </p>
+        </td>
+    </tr>
+</template>
+
+<!-- end of papers -->
+
+<script>
+function showContent(src, tgt) {
+    var template = document.querySelector(src);
+    var clone = document.importNode(template.content, true);
+    document.querySelector(tgt).appendChild(clone);
+}
+</script>
+
+<body>
+    <!-- overall table -->
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <!-- 1st table for picture and bio -->
+        <tr><td>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <p style="text-align:center;padding-top:5%"><name>Hengyuan Hu</name></p>
+
+            <tr style="padding:0px">
+                <td style="padding:2.5%;width:38%;max-width:38%">
+                    <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile.jpg" class="img-rounded"></a>
+                </td>
+
+                <td style="padding:2.5%;width:62%;vertical-align:top">
+                    <p>
+                        I am a PhD student at <a href="https://ai.stanford.edu/">Stanford University</a>
+                        advised by <a href="https://dorsa.fyi/">Dorsa Sadigh</a>.
+                        I am interested in robotics, human-AI coordination and reinforcement learning.
+                    </p>
+                    <p>
+                        Previously, I spent 4 years as a Research Engineer at FAIR where I worked closely with
+                        <a href="https://www.jakobfoerster.com/">Jakob Foerster</a> and <a href=https://www.cs.cmu.edu/~noamb/>Noam Brown</a>
+                        on reinforcement learning, search and coordination in multi-agent environments.
+                        I was also a core member of the team that created <a href=https://ai.facebook.com/research/cicero>Cicero</a>,
+                        the first AI that reaches human level in Diplomacy.
+                    </p>
+                    <p>
+                        I started my journey in CS and AI as an undergrad in <a href=https://hkust.edu.hk>HKUST</a>
+                        and did my thesis with <a href="http://home.cse.ust.hk/~cktang/bio.html">Chi-Keung Tang</a>.
+                    </p>
+                    <p style="text-align:center">
+                        <a href="mailto:hengyuan.hhu@gmail.com">Email</a> &nbsp/&nbsp
+                        <a href="https://github.com/hengyuan-hu">Github</a> &nbsp/&nbsp
+                        <a href="https://scholar.google.com/citations?hl=en&user=oF46lMIAAAAJ">Google Scholar</a>
+                    </p>
+                </td>
+            </tr>
+        </tbody></table>
+        </td></tr>
+
+        <!-- second table for news -->
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>News</heading>
+            <p>
+            </p>
+            </td>
+        </tr>
+        </tbody></table> -->
+
+        <!-- 3rd table for publication -->
+        <tr><td>
+        <table style="width:100%;padding-left:0.75%; border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr><td>
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Selected Publication</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Publication by Topic</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Publication by Date</a></li>
+                    </ul>
+                </div>
+            </td></tr>
+            <tr><td>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <!-- selected publcation  -->
+                        <div class="tab-pane fade in active" id="tab1">
+                            <table id="table-selected"><tbody>
+                                <script>
+                                    showContent("#cicero", "#table-selected")
+                                    showContent("#obl", "#table-selected")
+                                    showContent("#other-play", "#table-selected")
+                                    showContent("#minirts", "#table-selected")
+                                </script>
+                            </tbody></table>
+                        </div>
+                        <!-- publication by topic -->
+                        <div class="tab-pane fade" id="tab2">
+                            <table id="table-by-topic"><tbody>
+                                <tr><td>
+                                    <table id="topic-human-ai"><tbody>
+                                        <tr>
+                                            <td style="width:25%; vertical-align:middle; padding-bottom:2.5%;">
+                                                <h4>Human-AI Coordination</h4>
+                                            </td>
+                                        </tr>
+                                        <script>
+                                            showContent("#improvised", "#topic-human-ai")
+                                            showContent("#k-level", "#topic-human-ai")
+                                            showContent("#obl", "#topic-human-ai")
+                                            showContent("#other-play", "#topic-human-ai")
+                                            showContent("#sad", "#topic-human-ai")
+                                        </script>
+                                    </tbody></table>
+                                </td></tr>
+                                <tr><td>
+                                    <table id="topic-diversity"><tbody>
+                                        <tr>
+                                            <td style="width:25%; vertical-align:middle; padding-bottom:2.5%;">
+                                                <h4>Learning Diverse Policies</h4>
+                                            </td>
+                                        </tr>
+                                        <script>
+                                            showContent("#adversity", "#topic-diversity")
+                                            showContent("#trajedi", "#topic-diversity")
+                                            showContent("#ridge-rider", "#topic-diversity")
+                                        </script>
+                                    </tbody></table>
+                                </td></tr>
+                                <tr><td>
+                                    <table id="topic-search"><tbody>
+                                        <tr>
+                                            <td style="width:25%; vertical-align:middle; padding-bottom:2.5%;">
+                                                <h4>Search</h4>
+                                            </td>
+                                        </tr>
+                                        <script>
+                                            showContent("#cicero", "#topic-search")
+                                            showContent("#pikl-hanabi", "#topic-search")
+                                            showContent("#pikl", "#topic-search")
+                                            showContent("#belief-fine-tune", "#topic-search")
+                                            showContent("#rl-search", "#topic-search")
+                                            showContent("#lbs", "#topic-search")
+                                            showContent("#sparta", "#topic-search")
+                                        </script>
+                                    </tbody></table>
+                                </td></tr>
+                                <tr><td>
+                                    <table id="topic-others"><tbody>
+                                        <tr>
+                                            <td style="width:25%; vertical-align:middle; padding-bottom:2.5%;">
+                                                <h4>Others</h4>
+                                            </td>
+                                        </tr>
+                                        <script>
+                                            showContent("#minirts", "#topic-others")
+                                        </script>
+                                    </tbody></table>
+                                </td></tr>
+                            </tbody></table>
+                        </div>
+
+                        <!-- publication by date -->
+                        <div class="tab-pane fade" id="tab3">
+                            <table id="table-by-date"><tbody>
+                                <script>
+                                    showContent("#adversity", "#table-by-date")
+                                    showContent("#cicero", "#table-by-date")
+                                    showContent("#pikl-hanabi", "#table-by-date")
+                                    showContent("#pikl", "#table-by-date")
+                                    showContent("#improvised", "#table-by-date")
+                                    showContent("#belief-fine-tune", "#table-by-date")
+                                    showContent("#k-level", "#table-by-date")
+                                    showContent("#rl-search", "#table-by-date")
+                                    showContent("#obl", "#table-by-date")
+                                    showContent("#trajedi", "#table-by-date")
+                                    showContent("#lbs", "#table-by-date")
+                                    showContent("#other-play", "#table-by-date")
+                                    showContent("#ridge-rider", "#table-by-date")
+                                    showContent("#sparta", "#table-by-date")
+                                    showContent("#sad", "#table-by-date")
+                                    showContent("#minirts", "#table-by-date")
+                                </script>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </td><tr>
+        </tbody></table>
+        </td></tr>
+    </table>
+
+</body>
+</html>
