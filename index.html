@@ -17,6 +17,36 @@
 
 
 <!-- beginning of papers -->
+<template id="instruct-rl">
+<tr>
+    <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
+        <div>
+            <img src='images/cicero.png' width="160"></div>
+        </div>
+    </td>
+
+    <td style="width:75%; vertical-align:middle; padding-bottom:5%">
+        <a href="https://arxiv.org/abs/2304.07297">
+            <papertitle>Language Instructed Reinforcement Learning for Human-AI Coordination</papertitle>
+        </a>
+        <br>
+        Hengyuan Hu, Dorsa Sadigh
+        <br>
+        <em>ICML</em>, 2023
+        <p></p>
+        <p>
+          InstructRL enables humans to specify what kind of strategies
+          they expect from their AI partners through natural language
+          instructions. We use pretrained large language models to
+          generate a prior policy conditioned on the human instruction
+          and use the prior to regularize the RL objective. This leads
+          to the RL agent converging to equilibria that are aligned
+          with human preferences.
+        </p>
+    </td>
+</tr>
+</template>
+
 <template id="cicero">
 <tr>
     <td style="width:25%; vertical-align:middle; padding-bottom:5%;">
@@ -35,9 +65,12 @@
         <em>Science</em>, Issue 378, Dec 2022
         <p></p>
         <p>
-            We create Cicero, the first AI that achieves human-level performance in Diplomacy, a board game
-            that requires complex strategic planning and natural langauge communication. We address this challenge
-            using combinations of imitation learning, reinforcement learning, search, and large langauge models.
+            We create Cicero, the first AI that achieves human-level
+            performance in Diplomacy, a board game that requires
+            complex strategic planning and natural langauge
+            communication. We address this challenge using
+            combinations of imitation learning, reinforcement
+            learning, search, and large langauge models.
         </p>
     </td>
 </tr>
@@ -61,9 +94,12 @@
             <em>ICLR</em>, 2023, <b>notable-top-25%</b>
             <p></p>
             <p>
-                We produce meaningfully diverse and reasonable joint policies using adversarial reward shaping.
-                We show that naively applying adversarial rewards will lead to agents learning <em>deliberate sabotaging</em> behaviors and
-                we address it using variants of off-belief learning.
+                We produce meaningfully diverse and reasonable joint
+                policies using adversarial reward shaping.  We show
+                that naively applying adversarial rewards will lead to
+                agents learning <em>deliberate sabotaging</em>
+                behaviors and we address it using variants of
+                off-belief learning.
             </p>
         </td>
     </tr>
@@ -87,9 +123,11 @@
             <em>NeurIPS</em>, 2022
             <p></p>
             <p>
-                We study self-explaining deviations (SEDs), a specific class of coordination problems
-                where players deviate from the common understanding of what reasonable behavior would
-                be in normal circumstances assuming that other agents will realize, using theory of mind,
+                We study self-explaining deviations (SEDs), a specific
+                class of coordination problems where players deviate
+                from the common understanding of what reasonable
+                behavior would be in normal circumstances assuming
+                that other agents will realize, using theory of mind,
                 that the circumstance must be abnormal.
             </p>
         </td>
@@ -529,6 +567,7 @@ function showContent(src, tgt) {
                         <div class="tab-pane fade in active" id="tab1">
                             <table id="table-selected"><tbody>
                                 <script>
+                                    showContent("#instruct-rl", "#table-selected")
                                     showContent("#cicero", "#table-selected")
                                     showContent("#obl", "#table-selected")
                                     showContent("#other-play", "#table-selected")
@@ -547,6 +586,7 @@ function showContent(src, tgt) {
                                             </td>
                                         </tr>
                                         <script>
+                                            showContent("#instruct-rl", "#table-selected")
                                             showContent("#improvised", "#topic-human-ai")
                                             showContent("#k-level", "#topic-human-ai")
                                             showContent("#obl", "#topic-human-ai")
