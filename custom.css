@@ -78,3 +78,11 @@ a {
   text-decoration: none; /* optional: remove underline */
 }
 
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .row > .col-sm-7 { order: 2; }
+  .row > .col-sm-5 { order: 1; }
+}
