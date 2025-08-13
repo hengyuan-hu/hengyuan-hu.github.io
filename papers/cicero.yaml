@@ -1,0 +1,15 @@
+id: cicero
+image:
+  src: images/cicero.png
+  width: '180'
+paper:
+  title: Human-Level Play in the Game of Diplomacy by Combining Language Models With
+    Strategic Reasoning
+  link: https://www.science.org/doi/full/10.1126/science.ade9097
+authors:
+- Meta Fundamental AI Research Diplomacy Team (FAIR)
+venue: Science Issue 378, Dec 2022
+tags:
+- Reinformcent Learning
+- Search
+- LLM

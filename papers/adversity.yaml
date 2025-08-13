@@ -1,0 +1,15 @@
+id: adversity
+image:
+  src: images/adversity.png
+  width: '180'
+paper:
+  title: Adversarial Diverstiy in Hanabi
+  link: https://openreview.net/pdf?id=uLE3WF3-H_5
+authors:
+- Brandon Cui*
+- Andrei Lupu*
+- Samuel Sokota
+- Hengyuan Hu
+- David Wu
+- Jakob Foerster
+venue: ICLR 2023

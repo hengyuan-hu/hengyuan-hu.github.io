@@ -1,0 +1,17 @@
+id: pikl
+image:
+  src: images/pikl.png
+  width: '180'
+paper:
+  title: Modeling Strong and Human-Like Gameplay With KL-regularized Search
+  link: https://proceedings.mlr.press/v162/jacob22a/jacob22a.pdf
+authors:
+- Athul Paul Jacob
+- David J Wu
+- Gabriele Farina
+- Adam Lerer
+- Hengyuan Hu
+- Anton Bakhtin
+- Jacob Andreas
+- Noam Brown
+venue: ICML 2022

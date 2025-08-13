@@ -1,0 +1,13 @@
+id: asd
+paper:
+  title: "Diffusion Models are Secretly Exchangeable: Parallelizing DDPMs via Autospeculation"
+  link: https://arxiv.org/abs/2505.03983
+authors:
+- Hengyuan Hu
+- Aniket Das
+- Dorsa Sadigh
+- Nima Anari
+venue: ICML 2025
+tags:
+- Diffusion Models
+- Theory

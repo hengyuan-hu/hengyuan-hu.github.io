@@ -1,0 +1,13 @@
+id: trajedi
+image:
+  src: images/trajedi.png
+  width: '180'
+paper:
+  title: Trajectory Diversity for Zero-Shot Coordination
+  link: http://proceedings.mlr.press/v139/lupu21a/lupu21a.pdf
+authors:
+- Andrei Lupu
+- Brandon Cui
+- Hengyuan Hu
+- Jakob Foerster
+venue: ICML 2021

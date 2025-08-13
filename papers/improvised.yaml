@@ -1,0 +1,16 @@
+id: improvised
+image:
+  src: images/improvised.png
+  width: '180'
+paper:
+  title: Self-Explaining Deviations for Coordination
+  link: https://proceedings.neurips.cc/paper_files/paper/2022/file/faa6276ea12d7afeb3e42b210c86f688-Paper-Conference.pdf
+authors:
+- Hengyaun Hu*
+- Samuel Sokota*
+- David Wu
+- Anton Bakhtin
+- Andrei Lupu
+- Brandon Cui
+- Jakob Foerster
+venue: NeurIPS 2022

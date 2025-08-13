@@ -1,0 +1,15 @@
+id: belief-fine-tune
+image:
+  src: images/belief-ft.png
+  width: '180'
+paper:
+  title: A Fine-Tuning Approach to Belief State Modeling
+  link: https://openreview.net/pdf?id=ckZY7DGa7FQ
+authors:
+- Samuel Sokota
+- Hengyuan Hu
+- David Wu
+- Zico Kolter
+- Jakob Foerster
+- Noam Brown
+venue: ICLR 2022

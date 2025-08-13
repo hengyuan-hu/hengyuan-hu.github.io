@@ -1,0 +1,24 @@
+id: social-vqa
+image:
+  src: images/kwon-icra.png
+  width: '180'
+paper:
+  title: Toward Grounded Commonsense Reasoning
+  link: https://arxiv.org/abs/2304.07297
+authors:
+- Minae Kwon
+- Hengyuan Hu
+- Vivek Myers
+- Siddharth Karamcheti
+- Anca Dragan
+- Dorsa Sadigh
+venue: ICRA 2024
+links:
+  Website: https://minaek.github.io/grounded_commonsense_reasoning/
+description: "We equip robots with commonsense reasoning skills by enabling them to\
+  \ actively gather missing information from the environment.\n                To\
+  \ reason in the real world, robots must go beyond passively querying LLMs and actively\
+  \ gather information from the environment that is required to make the right decision.\
+  \ We propose an approach that leverages an LLM and vision language model (VLM) to\
+  \ help a robot actively perceive its environment to perform grounded commonsense\
+  \ reasoning"

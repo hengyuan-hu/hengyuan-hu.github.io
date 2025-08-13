@@ -1,0 +1,11 @@
+id: rl-search
+paper:
+  title: Scalable Online Planning via Reinforcement Learning Fine-Tuning
+  link: https://arxiv.org/pdf/2109.15316.pdf
+authors:
+- Arnaud Fickinger*
+- Hengyuan Hu*
+- Brandon Amos
+- Stuart Russell
+- Noam Brown
+venue: NeurIPS 2022

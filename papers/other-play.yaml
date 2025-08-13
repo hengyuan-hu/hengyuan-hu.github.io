@@ -1,0 +1,16 @@
+id: other-play
+image:
+  src: images/other-play.png
+  width: '180'
+paper:
+  title: “Other-Play” for Zero-Shot Coordination
+  link: http://proceedings.mlr.press/v119/hu20a/hu20a.pdf
+authors:
+- Hengyuan Hu
+- Adam Lerer
+- Alex Peysakhovich
+- Jakob Foerster
+venue: ICML 2020
+tags:
+- Human-AI Coordination
+- Reinforcement Learning

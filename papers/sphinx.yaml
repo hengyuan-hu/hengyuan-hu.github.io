@@ -1,0 +1,21 @@
+id: sphinx
+# image:
+#   src: images/ibrl.png
+#   width: '180'
+paper:
+  title: What's the Move? Hybrid Imitation Learning via Salient Points
+  link: https://arxiv.org/abs/2311.02198
+authors:
+- Priya Sundaresan*
+- Hengyuan Hu*
+- Quan Vuong
+- Jeannette Bohg
+- Dorsa Sadigh
+venue: ICLR 2025
+links:
+  Website: https://sphinx-manip.github.io/
+  Code: https://github.com/priyasundaresan/sphinx
+description: ""
+tags:
+- Robotics
+- Imitation Learning

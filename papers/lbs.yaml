@@ -1,0 +1,14 @@
+id: lbs
+image:
+  src: images/lbs.png
+  width: '180'
+paper:
+  title: 'Learned Belief Search: Efficiently Improving Policies in Partially Observable
+    Settings'
+  link: https://arxiv.org/pdf/2106.09086.pdf
+authors:
+- Hengyuan Hu*
+- Adam Lerer*
+- Noam Brown
+- Jakob Foerster
+venue: arxiv 2021

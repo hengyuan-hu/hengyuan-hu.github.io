@@ -1,0 +1,18 @@
+id: ibrl
+image:
+  src: images/ibrl.png
+  width: '180'
+paper:
+  title: Imitation Bootstrapped Reinforcement Learning
+  link: https://arxiv.org/abs/2311.02198
+authors:
+- Hengyuan Hu
+- Suvir Mirchandani
+- Dorsa Sadigh
+venue: RSS 2024
+links:
+  Website: https://ibrl.hengyuanhu.com/
+  Code: https://github.com/hengyuan-hu/ibrl
+tags:
+- Robotics
+- RL

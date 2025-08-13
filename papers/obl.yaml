@@ -1,0 +1,19 @@
+id: obl
+image:
+  src: images/obl.png
+  width: '180'
+paper:
+  title: Off-Belief Learning
+  link: http://proceedings.mlr.press/v139/hu21c/hu21c.pdf
+authors:
+- Hengyuan Hu
+- Adam Lerer
+- Brandon Cui
+- Luis Pineda
+- David Wu
+- Noam Brown
+- Jakob Foerster
+venue: ICML 2021
+tags:
+- Human-AI Coordination
+- Reinforcement Learning

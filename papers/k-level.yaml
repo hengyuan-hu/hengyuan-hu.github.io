@@ -1,0 +1,13 @@
+id: k-level
+image:
+  src: images/k-level.png
+  width: '180'
+paper:
+  title: K-Level Reasoning for Zero-Shot Coordination in Hanabi
+  link: https://proceedings.neurips.cc/paper/2021/file/4547dff5fd7604f18c8ee32cf3da41d7-Paper.pdf
+authors:
+- Brandon Cui
+- Hengyuan Hu
+- Luis Pineda
+- Jakob Foerster
+venue: NeurIPS 2021

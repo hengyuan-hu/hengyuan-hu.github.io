@@ -1,0 +1,13 @@
+id: sparta
+image:
+  src: images/sparta.png
+  width: '180'
+paper:
+  title: Improving Policies via Search in Cooperative Partially Observable Games
+  link: https://ojs.aaai.org/index.php/AAAI/article/download/6208/6064
+authors:
+- Adam Lerer
+- Hengyuan Hu
+- Jakob Foerster
+- Noam Brown
+venue: AAAI 2020

@@ -1,0 +1,11 @@
+id: pikl-hanabi
+paper:
+  title: Human-Ai Coordination via Human-Regularized Search and Learning
+  link: https://arxiv.org/pdf/2210.05125.pdf
+authors:
+- Hengyuan Hu
+- David J Wu
+- Adam Lerer
+- Jakob Foerster
+- Noam Brown
+venue: arxiv 2022

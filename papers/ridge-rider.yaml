@@ -1,0 +1,19 @@
+id: ridge-rider
+image:
+  src: images/rr.png
+  width: '180'
+paper:
+  title: 'Ridge Rider: Finding Diverse Solutions by Following Eigenvectors of the
+    Hessian'
+  link: https://proceedings.neurips.cc/paper/2020/file/08425b881bcde94a383cd258cea331be-Paper.pdf
+authors:
+- Jack Parker-Holder
+- Luke Metz
+- Cinjon Resnick
+- Hengyuan Hu
+- Adam Lerer
+- Alistair Letcher
+- Alexander Peysakhovich
+- Aldo Pacchiano
+- Jakob Foerster
+venue: NeurIPS 2020

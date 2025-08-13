@@ -1,0 +1,11 @@
+id: sad
+image:
+  src: images/sad.png
+  width: '180'
+paper:
+  title: Simplified Action Decoder for Deep Multi-Agent Reinforcement Learning
+  link: https://arxiv.org/pdf/1912.02288.pdf
+authors:
+- Hengyuan Hu
+- Jakob N Foerster
+venue: ICLR 2020

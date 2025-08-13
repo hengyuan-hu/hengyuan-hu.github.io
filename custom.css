@@ -1,0 +1,80 @@
+/* Minimal, clean tweaks */
+html, body { height: 100%; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #222;
+    background: #fafafa;
+    line-height: 1.6;
+}
+.site { padding: 40px 20px; }
+@media (min-width: 992px) { .site { padding: 60px 0; } }
+
+.name { margin-top: 0; font-weight: 600; letter-spacing: 0.2px; }
+.muted { color: #666; }
+.right-col {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 24px;
+}
+.avatar {
+    width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 1px solid #eee;
+}
+.social a { margin-right: 12px; text-decoration: none; }
+
+.papers-header { margin: 0 16px 16px; font-weight: 600; font-size: 24px; }
+.paper-item {
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    transition: box-shadow .15s ease, border-color .15s ease;
+}
+.paper-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); border-color: #e5e5e5; }
+.paper-title { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
+.paper-meta {
+    font-size: 13px;
+    color: #555;
+}
+.label-venue { background: #111; font-weight: 500}
+.label-year { background: #888; }
+
+.paper-links-tags {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px; /* spacing between links and tags */
+  font-size: 13px; /* matches .label-venue size */
+}
+
+.paper-links a i {
+  font-size: 15px;        /* match visual size to text in .label-tag */
+  line-height: 1;         /* prevents extra vertical space */
+  vertical-align: middle; /* centers relative to text/badges */
+  position: relative;
+
+}
+
+.label-tag {
+  background: #111;
+  font-weight: 500;
+}
+
+.section-title { margin: 28px 0 8px; font-weight: 600; }
+.hr { border: 0; height: 1px; background: #eee; margin: 18px 0; }
+
+/* narrow screens */
+@media (max-width: 991px) {
+    .right-col { position: static; margin-top: 24px; }
+    .avatar { width: 120px; height: 120px; }
+}
+.highlight-author {
+  font-weight: bold;
+  color: #f3993a; /* pick your highlight color */
+}
+a {
+  color: #1e3b7a; /* pick your color */
+  text-decoration: none; /* optional: remove underline */
+}
+

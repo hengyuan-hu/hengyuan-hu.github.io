@@ -1,0 +1,15 @@
+id: instruct-rl
+image:
+  src: images/instruct-rl.jpg
+  width: '180'
+paper:
+  title: Language Instructed Reinforcement Learning for Human-AI Coordination
+  link: https://arxiv.org/abs/2304.07297
+authors:
+- Hengyuan Hu
+- Dorsa Sadigh
+venue: ICML 2023
+tags:
+- Human-AI Coordination
+- Reinforcement Learning
+- LLM

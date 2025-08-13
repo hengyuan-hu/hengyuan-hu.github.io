@@ -1,0 +1,16 @@
+id: null
+image:
+  src: images/minirts.png
+  width: '180'
+paper:
+  title: Hierarchical decision making by generating and following natural language
+    instructions
+  link: https://proceedings.neurips.cc/paper/2019/file/7967cc8e3ab559e68cc944c44b1cf3e8-Paper.pdf
+authors:
+- Hengyuan Hu*
+- Denis Yarats*
+- Qucheng Gong
+- Yuandong Tian
+- Mike Lewis
+venue: NeurIPS
+venue_details: ' 2019'
