@@ -79,7 +79,8 @@ a {
 }
 
 @media (max-width: 767px) {
-  .row {
+    .right-col { margin: 0 16px 0;}
+    .row {
     display: flex;
     flex-direction: column;
   }
