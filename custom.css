@@ -36,6 +36,7 @@ body {
     font-size: 13px;
     color: #555;
 }
+
 .label-venue { background: #111; font-weight: 500}
 .label-year { background: #888; }
 
@@ -69,14 +70,20 @@ body {
     .right-col { position: static; margin-top: 24px; }
     .avatar { width: 120px; height: 120px; }
 }
+
 .highlight-author {
   font-weight: bold;
-  color: #ff7a00; /* pick your highlight color */
+  color: #ff7a00;
   color: oklch(75% 0.22 55);
 }
-a {
-  color: #1e3b7a; /* pick your color */
-  text-decoration: none; /* optional: remove underline */
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus-visible {
+  color: #1e3b7a;
+  text-decoration: none;
 }
 
 @media (max-width: 767px) {
