@@ -21,17 +21,19 @@ function renderPaper(data) {
     const venue = venueParts[0];
     const year = venueParts.slice(1).join(' ');
 
-    const highlightName = "Hengyuan Hu"; // your name exactly as in YAML
+    const highlightNames = new Set([
+        "Hengyuan Hu",
+        "Meta Fundamental AI Research Diplomacy Team (FAIR)",
+    ]);
 
     const authors = data.authors
-        .map(a => {
-            const cleanName = a.replace(/\*$/, ""); // remove trailing * for comparison
-            if (cleanName === highlightName) {
-                return `<span class="highlight-author">${a}</span>`;
-            }
-            return a;
+        .map((a) => {
+            const cleanName = a.replace(/\*$/, "").trim(); // strip trailing * used in YAML
+            return highlightNames.has(cleanName)
+            ? `<span class="highlight-author">${a}</span>`
+            : a;
         })
-        .join(', ');
+        .join(", ");
 
     const iconMap = {
         "Website": '<i class="fa fa-globe" aria-hidden="true"></i>',

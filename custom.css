@@ -71,7 +71,8 @@ body {
 }
 .highlight-author {
   font-weight: bold;
-  color: #f3993a; /* pick your highlight color */
+  color: #ff7a00; /* pick your highlight color */
+  color: oklch(75% 0.22 55);
 }
 a {
   color: #1e3b7a; /* pick your color */
