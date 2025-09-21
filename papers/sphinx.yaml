@@ -4,7 +4,7 @@ id: sphinx
 #   width: '180'
 paper:
   title: What's the Move? Hybrid Imitation Learning via Salient Points
-  link: https://arxiv.org/abs/2311.02198
+  link: https://arxiv.org/abs/2412.05426
 authors:
 - Priya Sundaresan*
 - Hengyuan Hu*
