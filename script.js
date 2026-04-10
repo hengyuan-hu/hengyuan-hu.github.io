@@ -37,7 +37,7 @@ function renderPaper(data) {
 
     const iconMap = {
         "Website": '<i class="fa fa-globe" aria-hidden="true"></i>',
-        "Code": '<i class="fa fa-code" aria-hidden="true"></i>'
+        "Code": '<i class="fa-brands fa-github" aria-hidden="true"></i>'
     };
 
     const linksHTML = Object.entries(data.links || {})
