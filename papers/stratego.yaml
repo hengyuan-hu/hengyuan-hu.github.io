@@ -1,0 +1,16 @@
+id: stratego
+paper:
+  title: Superhuman AI for Stratego Using Self-Play Reinforcement Learning and Test-Time Search
+  link: https://arxiv.org/abs/2311.02198
+authors:
+- Samuel Sokota
+- Eugene Vinitsky
+- Hengyuan Hu
+- J. Zico Kolter
+- Gabriele Farina
+venue: arxiv 2025
+links:
+  Code: https://github.com/StrategoAI/ataraxos
+tags:
+- Reinforcement Learning
+- Search

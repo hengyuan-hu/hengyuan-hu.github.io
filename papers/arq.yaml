@@ -1,0 +1,15 @@
+id: arq
+paper:
+  title: "Asking the Right Questions: Improving Reasoning with Generated Stepping Stones"
+  link: https://arxiv.org/abs/2602.19069
+authors:
+- Hengyuan Hu*
+- Tingchen Fu*
+- Minqi Jiang
+- Alexander Miller
+- Yoram Bachrach
+- Jakob Foerster
+venue: arxiv 2026
+tags:
+- LLM
+- Reasoning
