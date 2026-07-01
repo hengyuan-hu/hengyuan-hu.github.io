@@ -1,13 +1,41 @@
 /* Minimal, clean tweaks */
+:root {
+    --bg: #ece8df;        /* beige surface */
+    --bg-line: rgba(150, 128, 92, 0.07); /* faint texture line */
+    --paper: #fdfaf3;     /* off-white for cards */
+    --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 html, body { height: 100%; }
+/* One font everywhere: San Francisco on Apple, native UI font elsewhere.
+   Overrides the Helvetica pins in stylesheet.css. */
+body, p, a, li, td, th, tr, strong,
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--sans);
+}
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: #222;
-    background: #fafafa;
+    background-color: var(--bg);
+    background-image: repeating-linear-gradient(
+        135deg,
+        var(--bg-line) 0,
+        var(--bg-line) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    background-attachment: fixed;
     line-height: 1.6;
 }
-.site { padding: 40px 20px; }
-@media (min-width: 992px) { .site { padding: 60px 0; } }
+/* Big canvas: one sheet holding all content, floating on the textured bg. */
+.site {
+    background: var(--paper);
+    border-radius: 12px;
+    box-shadow:
+        0 1px 2px rgba(45, 38, 22, 0.05),
+        0 14px 44px rgba(45, 38, 22, 0.12);
+    margin: 40px auto;
+    padding: 36px 28px;
+}
+@media (min-width: 992px) { .site { padding: 52px 44px; } }
 
 .name { margin-top: 0; font-weight: 600; letter-spacing: 0.2px; }
 .muted { color: #666; }
@@ -22,15 +50,17 @@ body {
 .social a { margin-right: 12px; text-decoration: none; }
 
 .papers-header { margin: 0 16px 16px; font-weight: 600; font-size: 24px; }
+/* Each paper is its own smaller card floating on the big canvas. */
 .paper-item {
-    background: #fff;
+    background: var(--paper);
     border: none;
     border-radius: 8px;
     padding: 14px 16px;
     margin-bottom: 12px;
-    transition: box-shadow .15s ease, border-color .15s ease;
+    box-shadow:
+        0 1px 2px rgba(45, 38, 22, 0.05),
+        0 14px 44px rgba(45, 38, 22, 0.12);
 }
-.paper-item:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); border-color: #e5e5e5; }
 .paper-title { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
 .paper-meta {
     font-size: 13px;
