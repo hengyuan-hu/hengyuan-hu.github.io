@@ -5,7 +5,8 @@
     --paper: #fdfaf3;     /* off-white for cards */
     --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-html, body { height: 100%; }
+html { height: 100%; }
+body { min-height: 100%; }
 /* One font everywhere: San Francisco on Apple, native UI font elsewhere.
    Overrides the Helvetica pins in stylesheet.css. */
 body, p, a, li, td, th, tr, strong,
@@ -24,6 +25,7 @@ body {
     );
     background-attachment: fixed;
     line-height: 1.6;
+    padding: 40px 0;
 }
 /* Big canvas: one sheet holding all content, floating on the textured bg. */
 .site {
@@ -32,7 +34,7 @@ body {
     box-shadow:
         0 1px 2px rgba(45, 38, 22, 0.05),
         0 14px 44px rgba(45, 38, 22, 0.12);
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 36px 28px;
 }
 @media (min-width: 992px) { .site { padding: 52px 44px; } }
