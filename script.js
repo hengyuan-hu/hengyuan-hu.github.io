@@ -20,6 +20,10 @@ function renderPaper(data) {
     const venueParts = data.venue.split(/\s+/);
     const venue = venueParts[0];
     const year = venueParts.slice(1).join(' ');
+    // arxiv preprints show only the year, no venue badge
+    const venueHTML = venue.toLowerCase() === 'arxiv'
+        ? ''
+        : `<span class="label label-venue">${venue}</span>`;
 
     const highlightNames = new Set([
         "Hengyuan Hu",
@@ -58,7 +62,7 @@ function renderPaper(data) {
       <a href="${data.paper.link}" target="_blank">${data.paper.title}</a>
     </div>
     <div class="paper-meta">
-      <span class="label label-venue">${venue}</span>
+      ${venueHTML}
       <span class="label label-year">${year}</span>
       &nbsp;·&nbsp; ${authors}
     </div>

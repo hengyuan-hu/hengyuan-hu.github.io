@@ -1,0 +1,16 @@
+id: via
+paper:
+  title: "VIA: Visual Interface Agent for Robot Control"
+  link: https://arxiv.org/abs/2607.11119
+authors:
+- Hengyuan Hu
+- Priya Sundaresan
+- Jensen Gao
+- Dorsa Sadigh
+venue: arxiv 2026
+links:
+  Website: https://via.hengyuanhu.com/
+  Code: https://github.com/hengyuan-hu/via
+tags:
+- Robotics
+- LLM
