@@ -17,13 +17,16 @@ async function loadPapers(paths) {
 }
 
 function renderPaper(data) {
-    const venueParts = data.venue.split(/\s+/);
+    const venueParts = data.venue.trim().split(/\s+/);
     const venue = venueParts[0];
     const year = venueParts.slice(1).join(' ');
-    // arxiv preprints show only the year, no venue badge
-    const venueHTML = venue.toLowerCase() === 'arxiv'
-        ? ''
-        : `<span class="label label-venue">${venue}</span>`;
+    // one badge for venue + year; arxiv preprints show only the year
+    const venueText = venue.toLowerCase() === 'arxiv'
+        ? year
+        : [venue, year].filter(Boolean).join(' ');
+    const venueHTML = venueText
+        ? `<span class="label label-venue">${venueText}</span>`
+        : '';
 
     const highlightNames = new Set([
         "Hengyuan Hu",
@@ -54,6 +57,13 @@ function renderPaper(data) {
     const tagsHTML = (data.tags || [])
         .map(tag => `<span class="label label-tag">${tag}</span>`)
         .join(' ');
+    // middle dots separate venue from tags, and tags from the link icons
+    const sepHTML = venueHTML && tagsHTML
+        ? '<span class="meta-sep">·</span>'
+        : '';
+    const linkSepHTML = linksHTML && (venueHTML || tagsHTML)
+        ? '<span class="meta-sep">·</span>'
+        : '';
 
 
     const html = `
@@ -62,14 +72,15 @@ function renderPaper(data) {
       <a href="${data.paper.link}" target="_blank">${data.paper.title}</a>
     </div>
     <div class="paper-meta">
-      ${venueHTML}
-      <span class="label label-year">${year}</span>
-      &nbsp;·&nbsp; ${authors}
+      ${authors}
     </div>
     <div class="paper-links-tags">
         <div class="paper-tags">
+            ${venueHTML}
+            ${sepHTML}
             ${tagsHTML}
         </div>
+        ${linkSepHTML}
         <div class="paper-links">
             ${linksHTML}
         </div>

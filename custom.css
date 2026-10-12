@@ -68,15 +68,15 @@ body {
     color: #555;
 }
 
-.label-venue { background: #111; font-weight: 500}
-.label-year { background: #888; }
+.label-venue { background: rgba(30, 59, 122, 0.10); color: #1e3b7a; font-weight: 500; }
+.meta-sep { color: #999; margin: 0 2px; }
 
 .paper-links-tags {
   margin-top: 6px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px; /* spacing between links and tags */
+  gap: 8px 4px; /* row gap when wrapping; column gap around the dot before the links */
   font-size: 13px; /* matches .label-venue size */
 }
 
