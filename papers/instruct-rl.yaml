@@ -10,6 +10,6 @@ authors:
 - Dorsa Sadigh
 venue: ICML 2023
 tags:
-- Human-AI Coordination
-- Reinforcement Learning
+- Multi-Agent
+- RL
 - LLM

@@ -9,9 +9,9 @@ authors:
 - Zhiyuan Fan
 - J. Zico Kolter
 - Gabriele Farina
-venue: Nature Volume 658, Oct 2026
+venue: Nature Oct 2026
 links:
   Code: https://github.com/StrategoAI/ataraxos
 tags:
-- Reinforcement Learning
+- RL
 - Search

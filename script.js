@@ -17,7 +17,7 @@ async function loadPapers(paths) {
 }
 
 function renderPaper(data) {
-    const venueParts = data.venue.trim().split(/\s+/);
+    const venueParts = String(data.venue ?? "").trim().split(/\s+/);
     const venue = venueParts[0];
     const year = venueParts.slice(1).join(' ');
     // one badge for venue + year; arxiv preprints show only the year

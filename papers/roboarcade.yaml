@@ -1,0 +1,17 @@
+id: roboarcade
+paper:
+  title: "RoboARCade: Benchmarking Agentic Robot Control"
+  link: https://roboarcade.org/assets/roboarcade.pdf
+authors:
+- Satvik Sharma
+- Hengyuan Hu
+- Mihika Kamat
+- Dorsa Sadigh
+- Jeannette Bohg
+venue: "2026"
+links:
+  Website: https://roboarcade.org/
+  Code: https://github.com/Satvik1701/RoboARCade
+tags:
+- Robotics
+- LLM
